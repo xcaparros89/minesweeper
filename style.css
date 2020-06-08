@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    --height: 400px;
+    --width: 400px;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    justify-content: center;
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    width: calc(var(--width) + 90px);
+    height: calc(var(--height) + 120px);
+    background-color: darkgrey;
+    margin: 10px;
+    padding-bottom: 20px;
+    border-top: 3px solid rgb(202, 202, 202);
+    border-left:3px solid rgb(202, 202, 202);
+    border-bottom: 5px solid rgb(58, 57, 57);
+    border-right: 3px solid rgb(58, 57, 57);
+}
+
+.upBoard{
+    display:flex;
+    justify-content: space-evenly;
+    margin: 20px 50px;
+    border-top: 3px solid rgb(58, 57, 57);
+    border-left:3px solid rgb(58, 57, 57);
+    border-bottom: 3px solid rgb(202, 202, 202);
+    border-right: 3px solid rgb(202, 202, 202);
+    padding: 5px;
+    font-family: 'Orbitron', sans-serif;
+    width: var(--width);
+}
+
+.upBoard div{
+    background-color: black;
+    color: red;
+    padding: 2px 7px;
+}
+
+.downBoard{
+    display:flex;
+    justify-content: center;
+}
+
+.grid{
+    height: var(--height);
+    width: var(--width);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: grey;
+}
+
+.grid div{
+    height: calc(var(--height) / 10);
+    width: calc(var(--width) / 10);
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.showBombs{
+    background-image: url(./img/bomb.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid .hidden{
+    background-color: rgb(63, 63, 63);
+    border-top: 3px solid rgb(202, 202, 202);
+    border-left:3px solid rgb(202, 202, 202);
+    border-bottom: 5px solid black;
+    border-right: 3px solid black;
+}
+
+.flag{
+    background-image: url(./img/flag.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.red{
+    background-color: red;
+}
+
+.smiley-face{
+    background-image: url(./img/smiley.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+.sad-face{
+    background-image: url(./img/sad.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+#face:active{
+    background-image: url(./img/wink.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+
+.glasses-face{
+    background-image: url(./img/glasses.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
